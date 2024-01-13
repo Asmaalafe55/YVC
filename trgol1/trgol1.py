@@ -56,3 +56,4 @@ def salary():
     rate_per_hour = input("Enter your rate per hour: ")
     hours_per_day = input("Enter the number of hours you work per day: ")
     days_per_month = input("Enter the numbers of days you work per month: ")
+    print(name, " , your monthly salary is : ",rate_per_hour*hours_per_day*days_per_month -20*days_per_month , "  NIS")
