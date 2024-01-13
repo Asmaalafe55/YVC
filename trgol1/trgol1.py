@@ -45,3 +45,14 @@ def but_item():
     price = input("How much was each one? ")
     print("You bought ", quantity, " ", product, " and paid total of ", price*quantity, " shekels.")
 
+# 15) Write a program that captures the employee's name,
+# the employee's hourly wage,
+# the number of working hours per day and the number of working days per month
+# It prints a line that informs the employee what his gross salary is for this month,
+# while taking into account NIS 20 a fixed payment per day for travel.
+
+def salary():
+    name = input("Enter your name: ")
+    rate_per_hour = input("Enter your rate per hour: ")
+    hours_per_day = input("Enter the number of hours you work per day: ")
+    days_per_month = input("Enter the numbers of days you work per month: ")
