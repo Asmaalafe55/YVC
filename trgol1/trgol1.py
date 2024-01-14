@@ -21,10 +21,10 @@ def discount(a,b):
     print("new price: ", a - a*b/100)
     
 # 7) What will be printed in these functions
-# 7) print(g(g(9,5),g(1,3))) => 6
-# 7) print(10*func()+7) => 557
-# 7) print(addx(8)) => x8x , print(addx(1)+addx([])) => x1xx[]x , print(addx(addx(8>5))) => xx8>5xx
-# 7) print([b(9),b(2),b(5)]) => true,false,false , print(b(1)==b(2)) => false
+# 7) 6
+# 7) 557
+# 7) x8x, x1xx[]x, xx8>5xx
+# 7) true,false,false , false
 # 7)
 # 7)
 
@@ -57,3 +57,16 @@ def salary():
     hours_per_day = input("Enter the number of hours you work per day: ")
     days_per_month = input("Enter the numbers of days you work per month: ")
     print(name, " , your monthly salary is : ",rate_per_hour*hours_per_day*days_per_month -20*days_per_month , "  NIS")
+    
+# 16) Write a program that receives from the user the current month and the month he was born,
+# then it prints a message reporting how many months his next birthday will be
+
+def months_left():
+    month_now = int(input("What month is it now? "))
+    month_birth = int(input("What month were born in? "))
+    month_left = month_birth-month_now
+    if(month_left<0):
+        month_left+=12
+    print ("You have", month_left, "months left until your next birthday")
+    
+months_left()
