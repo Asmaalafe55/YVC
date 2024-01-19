@@ -26,3 +26,34 @@ def coffee_tea():
         
 # coffee_tea()
 
+# 8) Receive two numbers from the user: x,y These numbers indicate the position of 
+# a point in an axis system. Print where is this point: the beginning of labor? 
+# On the X axis on the Y axis? In the first / second / third / fourth quadrant?
+
+def where():
+    x= float(input("enter X: "))
+    y= float(input("enter Y: "))
+    if x==0 and y==0:
+        print("ראשית הצירים")
+    elif x==0:
+        print("Y ציר")
+    elif y==0:
+        print("X ציר")
+    if x>0 and y>0:
+        print("רביע ראשון")
+    elif x>0 and y<0:
+        print("רביע שלישי")
+    elif x<0 and y>0:
+        print("רביע שני")
+    else:
+        print("רביע רביעי")
+        
+# where()
+
+# 9) The following program helps edit a book for printing. It asks the user:
+# How many words are in each line?
+# How many lines are there on each page?
+# How many words in total should be printed?
+# It can be assumed that all the pages are the same, and each line has the same number
+# of words At the end, a report of how many pages will be required will be printed for printing.
+
