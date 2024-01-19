@@ -16,8 +16,8 @@ def div235 (num):
     else:
        print (num, "is not divisible by 5")
         
-# div235(40)
-# div235(39)
+div235(40)
+div235(39)
 
 # Write a function that will take two numbers and print a message about 
 # how many of them are positive (greater than zero)  
@@ -29,7 +29,7 @@ def pos(num1, num2):
         print("One of them is positive")
     print ("None of them is positive")
 
-# pos(12,0)
+pos(12,0)
 
 # Receive 3 integers from the user and print the middle one in terms of size.
 
@@ -44,7 +44,7 @@ def med():
     elif num1<=num3<=num2 or num2<=num3<=num1:
         print(num3,"is in the middle")
 
-# med()
+med()
 
 # Write a program that solves a quadratic equation. 
 # The quadratic equation function will take a,b,c and print if there is no solution 
