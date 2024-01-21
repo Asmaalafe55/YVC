@@ -60,6 +60,14 @@ def ff(strr):
 # The first line will always be "X", regardless of the numbers entered by the user,
 # which only determine the size of the rectangle.
 
+# 18) Write a function that takes as a parameter a positive whole number,
+# and prints in one line each number in its own quantity
+
+def f18(num):
+    for i in str(num):
+        print(i*int(i),end="")
+
+# f18(41802)
 
 # 20) Write a function that receives 3 numerical parameters a1,n,d: and prints
 # an arithmetic series (the difference between the terms is constant)
@@ -69,7 +77,7 @@ def sidra(a1,n,d):
     for i in range(n):
         print(a1+(i*d), end=" ")
 
-sidra(222,4,10)
+# sidra(222,4,10)
 
 
 # 21) Write a function that accepts a string as a parameter and prints each character twice, on a separate line
