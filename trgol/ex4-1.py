@@ -59,3 +59,10 @@ def ff(strr):
 # like in the example, with the rows containing "X" or "O" alternately only.
 # The first line will always be "X", regardless of the numbers entered by the user,
 # which only determine the size of the rectangle.
+
+# 21) Write a function that accepts a string as a parameter and prints each character twice, on a separate line
+
+def f21(str):
+    for i in str:
+        print(i*10)
+f21("efv")
