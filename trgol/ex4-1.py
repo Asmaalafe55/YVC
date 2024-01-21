@@ -9,3 +9,11 @@ def g():
 
 # g()
 
+# 7) Write a function that accepts two parameters: a string + an integer N
+# It prints the string N times including numbering of the lines.
+
+def gg(strr, num):
+    for i in range(num):
+        print(i,strr)
+        
+gg('njnj',5)
