@@ -60,9 +60,35 @@ def ff(strr):
 # The first line will always be "X", regardless of the numbers entered by the user,
 # which only determine the size of the rectangle.
 
+
+# 20) Write a function that receives 3 numerical parameters a1,n,d: and prints
+# an arithmetic series (the difference between the terms is constant)
+# that has n terms, starting from a1 and the difference between terms d
+
+def sidra(a1,n,d):
+    for i in range(n):
+        print(a1+(i*d), end=" ")
+
+sidra(222,4,10)
+
+
 # 21) Write a function that accepts a string as a parameter and prints each character twice, on a separate line
 
 def f21(str):
     for i in str:
         print(i*10)
-f21("efv")
+        
+# f21("efv")
+
+# 22) Write a function that accepts a string as a parameter and prints each character
+# in a separate line, starting 10 times for the first character and each time it
+# will print two more times, that is... 12,14,16
+
+def f22(str):
+    j = 0
+    for i in str:
+        print(i*(10+j))
+        j+=2
+        
+# f22("dfdfn")
+
