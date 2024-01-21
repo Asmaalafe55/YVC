@@ -16,4 +16,14 @@ def gg(strr, num):
     for i in range(num):
         print(i,strr)
         
-gg('njnj',5)
+# gg('njnj',5)
+
+# 8) Write a program that accepts a number N and prints a pyramid of zeros of height N
+
+def zero():
+    num = int(input("Please enter a number: "))
+    for i in range(num):
+        print("0"*(i+1))
+        
+# zero()
+
