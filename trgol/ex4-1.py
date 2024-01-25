@@ -50,16 +50,6 @@ def ff(strr):
         
 # print(ff("qwerty"))
 
-# 11) Receive an integer N from the user and print N lines from the following
-# template (note that after that the whole number is not printed)
-
-def f11():
-    n = int(input("How many times? "))
-    for i in range(n):
-        print((i%10)*n)
-
-f11()
-
 
 # 12) Get the width and height of a rectangle from the user and print a rectangle
 # like in the example, with the rows containing "X" or "O" alternately only.
