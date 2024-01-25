@@ -13,6 +13,20 @@ def ex11():
 # The first line will always be "X", regardless of the numbers entered by the user,
 # which only determine the size of the rectangle.
 
+def ex12():
+    height = int(input("enter height: "))
+    width = int(input("enter width: "))
+    x  = 1
+    for i in range(height):
+        if x==1:
+            print("X"*width)
+            x= 0
+        else:
+            print("O"*width)
+            x= 1
+            
+    
+ex12()
 
 
 # 23) Write a function that will take two integers a, b and then print the first 
