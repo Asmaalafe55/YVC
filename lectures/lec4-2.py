@@ -26,8 +26,30 @@ def ex12():
             x= 1
             
     
-ex12()
+# ex12()
 
+# 13) The following program manages someone's bank account. 
+# At first it asks the user for his name, how much money he has in his account, 
+# and how many operations he has done. Then, according to the number of actions he did:
+# Asking if he deposited (d) or withdrew (w), and what amount.
+# At the end, a report of the updated account balance is printed.
+
+def bank():
+    name = input("Whats your name? ")
+    money = float(input("How much money in your account? "))
+    trans = int (input("How many transactions? "))
+    
+    for i in range(trans):
+        action = input("deposit (d) or withdraw (w)? ")
+        if action == "w":
+          w = float(input("How much? "))
+          money = money - w
+        elif action == "d":
+          d = float(input("How much? "))
+          money = money + d      
+    print(name, "you now have", money, "shekel.")
+
+bank()
 
 # 23) Write a function that will take two integers a, b and then print the first 
 # multiples of the number. Try to make the printout complete as in the examples 
