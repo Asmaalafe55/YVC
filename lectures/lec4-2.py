@@ -47,9 +47,30 @@ def bank():
         elif action == "d":
           d = float(input("How much? "))
           money = money + d      
-    print(name, "you now have", money, "shekel.")
+    print(name, ", you now have", money, "shekel.")
 
-bank()
+# bank()
+
+# 15) Write a function that takes a list of numbers,
+# and prints only those that contain the number "8"
+
+def has8(list):
+    for num in list:
+        if "8" in str(num):
+            print (num)
+        
+
+# has8([82,57,1.8,5.1,7])
+
+# 16) Write a function that will take 2 lists and print the members common to both.
+
+def f16(list1, list2):
+    for i in list1:
+        for j in list2:
+            if (i == j):
+                print(i)
+
+# f16([1,11,23,56],[7,8,11,25,56,78])
 
 # 23) Write a function that will take two integers a, b and then print the first 
 # multiples of the number. Try to make the printout complete as in the examples 
