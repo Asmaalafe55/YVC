@@ -6,7 +6,13 @@ def ex11():
     for i in range(1, N+1):
         print(i * str(i%10))
         
-ex11()
+# ex11()
+
+# 12) Get the width and height of a rectangle from the user and print a rectangle
+# like in the example, with the rows containing "X" or "O" alternately only.
+# The first line will always be "X", regardless of the numbers entered by the user,
+# which only determine the size of the rectangle.
+
 
 
 # 23)
@@ -16,3 +22,5 @@ def ex23(a,b):
         print(x,'x',a, "=", a*x)
         
 # ex23(177,3)
+
+
