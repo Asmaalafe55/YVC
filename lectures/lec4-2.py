@@ -15,7 +15,9 @@ def ex11():
 
 
 
-# 23)
+# 23) Write a function that will take two integers a, b and then print the first 
+# multiples of the number. Try to make the printout complete as in the examples 
+# (not only Final result).
 
 def ex23(a,b):
     for x in range(1,b+1):
