@@ -1,5 +1,6 @@
 #  write a function that recieves a list of numbers and it will print them
 # In non-overlapping pairs, and if there is an exception, then print it alone
+# ex1([4,8,66,55,3,1]) -> ([4,8],[66,55],[3,1])
 
 def ex1(L):
     for nm in range(0,len(L),2):
