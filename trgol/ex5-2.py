@@ -34,3 +34,13 @@ def seq3(s):
 
 # seq3('QwerTY')
 
+# write a function that receives a list of numbers
+# it will print in one line the sum of each pairs
+# L=[3,9,1,22,-5,3] --> 12 10 23 -2
+
+def sum_pair(L):
+    for i in range(len(L)-1):
+        print(L[i]+L[i+1], end=" ")
+
+# sum_pair([3,9,1,22,-5,3])
+
