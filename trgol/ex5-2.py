@@ -22,3 +22,15 @@ def f1(s):
     
 # f1('QwertyU')
 
+# 9) Write a function that will receive a string and it will print in one line all the 3-letter sequences contained in it 
+# seq3('QwerTY') --> Qwe wer erT rTY
+
+def seq3(s):
+    for i in range(len(s)-2):
+        if i==0:
+            print (s[:3], end=" ")
+        else:
+            print (s[i:i+3] , end=" ")
+
+# seq3('QwerTY')
+
