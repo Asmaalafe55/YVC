@@ -77,3 +77,11 @@ def empty2(L):
 # 13) Take a list and print from it the numbers that are big
 # more than the one after them in the list (next in line)
 # bigger([40,8,11,5,2]) --> 40 11 5
+
+def bigger(L):
+    for i in range(len(L)-1):
+        if L[i]>L[i+1]:
+            print(L[i])
+        
+# bigger([40,8,11,5,2])
+
