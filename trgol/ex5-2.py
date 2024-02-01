@@ -141,3 +141,14 @@ def two_words(s1,s2):
 # mix('abcdefgh') --> ahbgcfde
 # mix('qwert1234') --> q4w3e2r1t
 
+def mix(s):
+    word=""
+    for i in range((len(s)//2)):
+        word+=s[i]
+        word+=s[len(s)-i-1]
+    if len(s)%2==1:
+        word+=s[(len(s)//2)]
+    print(word)
+
+# mix('abcdefgh')
+# mix('qwert1234')
