@@ -108,3 +108,36 @@ def char_numbered(s):
         print(i+1, s[i])
 
 # char_numbered('Mnbv')
+
+# 16) Pick up two words and print their letters alternately.
+# What remains of the longer word (if any) will be printed at the end
+# two_words('abc','XYZ') --> aXbYcZ
+# two_words('ABCDE','pp') --> ApBpCDE
+
+def two_words(s1,s2):
+    word=""
+    longer=""
+    shorter=""
+    if len(s1)>len(s2):
+        longer = s1
+        shorter = s2
+    else :
+        longer = s2
+        shorter = s1
+    index=0
+    for i in range(len(shorter)):
+        word+=longer[i]
+        word+=shorter[i]
+        index=i
+    word+=longer[index+1:]
+    
+    print(word)
+    
+# two_words('abc','XYZ')
+# two_words('ABCDE','pp')
+
+# 17) Pick up a word and print its characters alternately - 
+# one from the beginning and one from the end.
+# mix('abcdefgh') --> ahbgcfde
+# mix('qwert1234') --> q4w3e2r1t
+
