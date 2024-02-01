@@ -85,3 +85,17 @@ def bigger(L):
         
 # bigger([40,8,11,5,2])
 
+# 14) Take a list and print hems in pairs 
+# (no overlap between the pairs!). If the number
+# of members is even, the last one will appear as it is
+# mul_pairs([7,8,3,3,2,9]) --> 56 9 18
+# mul_pairs([3,8,4,5,7]) --> 24 20 7
+
+def mul_pairs(L):
+    for i in range(0,len(L)-1,2):
+        print(L[i]*L[i+1], end=" ")
+    if len(L)%2==1:
+        print (L[-1]*1)
+        
+# mul_pairs([7,8,3,3,2,9])
+# mul_pairs([3,8,4,5,7])
