@@ -99,3 +99,12 @@ def mul_pairs(L):
         
 # mul_pairs([7,8,3,3,2,9])
 # mul_pairs([3,8,4,5,7])
+
+# 15) Pick up a string and print the characters in
+# it, each letter in a separate line with a number starting from 1
+
+def char_numbered(s):
+    for i in range(len(s)):
+        print(i+1, s[i])
+
+# char_numbered('Mnbv')
