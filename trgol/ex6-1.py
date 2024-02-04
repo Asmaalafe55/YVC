@@ -129,7 +129,7 @@ def f13(L):
 # print(f13([1,6,66,8,11,8,13]))
 
 # 14) Return the sum of the squares of all the numbers in the list
-# f([2,4,5,0]) --> 45
+# f14([2,4,5,0]) --> 45
 
 def f14(L):
     sum=0
@@ -137,4 +137,23 @@ def f14(L):
         sum += int(L[i])*int(L[i])
     return sum
 
-print(f14([2,4,5,0]))
+# print(f14([2,4,5,0]))
+
+# 15) Return the sum of the evens of all the numbers in the list
+# f15([3,5,6,11,12,200,333]) --> 218
+# f15([3,7,11,239]) --> 0
+
+def f15(L):
+    sum=0
+    for i in range(len(L)):
+        if L[i]%2==0:
+            sum += L[i]
+    return sum
+
+# print(f15([3,5,6,11,12,200,333]))
+# print(f15([3,7,11,239]))
+
+# 16) Take a list of numbers, return how many of them are greater than their two neighbors
+# f16([12,7,2,6,23,22,14,44,30,33,33,22])
+
+
