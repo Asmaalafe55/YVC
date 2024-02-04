@@ -34,4 +34,15 @@ def f():
         if i%7==0 or '7' in str(i) :
             counter+=1
     return counter
-f()
+
+# print(f())
+
+# recevie a list of numbers, whats the number that is more by 100
+
+def f(L):
+    best=L[0]
+    for num in L[1:]:
+        if abs(100-num) < abs(100-best):
+            best = num
+    return best
+print(f())
