@@ -1,3 +1,29 @@
+# 4) Enter a number and return whether
+# it is divisible by all of the numbers
+# from 11 - 19 to (inclusive)
+
+def f4(N):
+    for i in range(11,20):
+        if N%i!=0:
+            return False
+        return True
+
+# print(f4(1234567890))
+# print(f4(232792560))
+
+# 5) Enter a number and return whether
+# it is divisible by at least one of the numbers
+# from 11 - 19 to (inclusive)
+
+def f5(N):
+    for i in range(11,20):
+        if N%i!=0:
+            return True
+        return False
+
+# print(f5(882487))
+# print(f5(882488))
+
 # 6) A function that receives a natural 
 # number and returns a list containing all 
 # the numbers from 1 - N (inclusive)
@@ -61,4 +87,31 @@ def f10(N):
         L += [N*i]
     return L
 
-print(f10(53))
+# print(f10(53))
+
+# 11) A function that receives N and returns 
+# a list and in it the first 10 multiples, positive and less than 100
+# f(13) --> [13,26,39,52,65,78,91]
+
+def f11(N):
+    L = []
+    for i in range(1,100):
+        if N*i<100:
+            L += [N*i]
+    return L
+
+# print(f11(13))
+# print(f11(25))
+
+# 12) return the max number that contains the '8' digit
+# f([11,2345,80,28,111,87,51,8,100]) --> 87
+
+def f12(L):
+    max8=0
+    for i in range(len(L)):
+        if '8' in str(L[i]):
+            if L[i]>max8:
+                max8=L[i]
+    return max8
+
+print(f12([11,2345,80,28,111,87,51,8,100]))
