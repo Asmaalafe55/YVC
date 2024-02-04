@@ -126,4 +126,15 @@ def f13(L):
             counter+=1
     return counter
 
-print(f13([1,6,66,8,11,8,13]))
+# print(f13([1,6,66,8,11,8,13]))
+
+# 14) Return the sum of the squares of all the numbers in the list
+# f([2,4,5,0]) --> 45
+
+def f14(L):
+    sum=0
+    for i in range(len(L)):
+        sum += int(L[i])*int(L[i])
+    return sum
+
+print(f14([2,4,5,0]))
