@@ -35,4 +35,30 @@ def f8(N):
             L += [i]
     return L
 
-print(f8(20))
+# print(f8(20))
+
+# 9) A function that receives N and returns 
+# the list of numbers X that are divisible by 3 and are in the range:
+# N-5<=X<=N+15
+# f(76) --> [72,75,78,81,84,87,90]
+
+def f9(N):
+    L=[]
+    for i in range(N-5,N+15):
+        if i%3==0:
+            L+= [i]
+    return L
+
+# print(f9(76))
+
+# 10) A function that receives N and returns 
+# a list and in it the first 10 multiples, positive
+# f(53) --> [53,106,159,212,265,318,371,424,477,530]
+
+def f10(N):
+    L = []
+    for i in range(1,11):
+        L += [N*i]
+    return L
+
+print(f10(53))
