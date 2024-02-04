@@ -25,7 +25,7 @@ def f(s1):
 
 
 # in a game 7 boom, we say all numbers but these that contains 7 and 
-# devidable by 7, and in its place we say boom
+# deviable by 7, and in its place we say boom
 # how many boom in 1-1000000
 
 def f():
@@ -45,4 +45,5 @@ def f(L):
         if abs(100-num) < abs(100-best):
             best = num
     return best
-print(f())
+
+print(f([103,113,98,94]))
