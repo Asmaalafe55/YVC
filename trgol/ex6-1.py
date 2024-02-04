@@ -114,4 +114,16 @@ def f12(L):
                 max8=L[i]
     return max8
 
-print(f12([11,2345,80,28,111,87,51,8,100]))
+# print(f12([11,2345,80,28,111,87,51,8,100]))
+
+# 13) return how many even numbers is in the list you received
+# f([1,6,66,8,11,8,13]) --> 4
+
+def f13(L):
+    counter =0
+    for i in range(len(L)):
+        if L[i]%2==0:
+            counter+=1
+    return counter
+
+print(f13([1,6,66,8,11,8,13]))
