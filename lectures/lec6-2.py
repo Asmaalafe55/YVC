@@ -45,4 +45,4 @@ def f3() :
             counter += 1
     return counter
 
-print(f3())
+# print(f3())
