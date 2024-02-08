@@ -62,4 +62,4 @@ def game () :
     print ()
     print (end-start)
     
-game()
+# game()
