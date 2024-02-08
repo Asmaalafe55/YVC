@@ -15,6 +15,7 @@ def f26(lst):
 # print(f26([123,456,789]))
 
 # 27) Receive 2 lists and return one list of the parameters without duplicates
+# f27([1,3,2,3,4,5],[6,7,5,9,0]) --> [0,1,2,3,4,5,6,7,9]
 
 def f27(lst1, lst2):
     # Option1
@@ -25,3 +26,15 @@ def f27(lst1, lst2):
     # return set(lst1)|set(lst2)
 
 # print(f27([1,3,2,3,4,5],[6,7,5,9,0]))
+
+# 28) Take 3 lists, return a list of those that are in at least two of them
+# f([4,2,1,7],[2,8,7,9,5],[1,7,5,30]) --> [1,2,5,7]
+
+def f28(L1,L2,L3):
+    lst1 = set(L1)&set(L2)
+    lst2 = set(L1)&set(L3)
+    lst3 = set(L3)&set(L2)
+    l = lst1|lst2|lst3
+    return l
+    
+print(f28([4,2,1,7],[2,8,7,9,5],[1,7,5,30]))

@@ -156,4 +156,11 @@ def f15(L):
 # 16) Take a list of numbers, return how many of them are greater than their two neighbors
 # f16([12,7,2,6,23,22,14,44,30,33,33,22])
 
+def f16(L):
+    counter = 0
+    for i in range(1,len(L)):
+        if L[i]>L[i-1] and L[i]>L[i+1]:
+            counter+=1
+    return counter
 
+print(f16([12,7,2,6,23,22,14,44,30,33,33,22]))
