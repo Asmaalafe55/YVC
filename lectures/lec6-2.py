@@ -46,3 +46,20 @@ def f3() :
     return counter
 
 # print(f3())
+
+
+def game () :
+    import random 
+    import datetime
+    seconds = random. randint (6,12)
+    print ('welcome to the game!') 
+    print ('press enter twice')
+    print (seconds, 'seconds between them!')
+    input ()
+    start = datetime.datetime.now ()
+    input ()
+    end = datetime.datetime.now ()
+    print ()
+    print (end-start)
+    
+game()
