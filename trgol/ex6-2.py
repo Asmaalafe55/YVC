@@ -21,7 +21,35 @@ def f18 (L):
             max = L[i]
     return max
 
-print(f18(['123', '3456', '4532','2']))
+# print(f18(['123', '3456', '4532','2']))
+
+# 19) Accept a string, return a string containing only the digits (0-9) that appeared in the original string
+# f19('blah1 blah2 blah4 6nj99m') --> '124699'
+
+def f19(s):
+    numbers = ['1','2','3','4','5','6','7','8','9','0']
+    string = ''
+    for i in s:
+        if i in numbers:
+            string += i
+    return string
+
+# print(f19('blah1 blah2 blah4 6nj99m'))
+
+# 20)
+
+# 21) 
+
+def f21(string):
+    result =""
+    for char in string:
+        if char != "#":
+            result = result + char
+        else:
+            result = result [:-1]
+    return result
+    
+print(f21('#ik3l##3d3#df#'))
 
 # 25) Receive a string, return how many different characters are there in it?
 
