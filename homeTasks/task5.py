@@ -1,5 +1,3 @@
-# 20, 24
-
 # 3) receive  number and return the sum of all the numbers that we can divide 
 
 def f3(N):
