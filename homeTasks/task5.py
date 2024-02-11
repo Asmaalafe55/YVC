@@ -1,4 +1,15 @@
-# 3)
+# 20, 24
+
+# 3) receive  number and return the sum of all the numbers that we can divide 
+
+def f3(N):
+    sum =0
+    for i in range(1,N+1):
+        if N%i == 0 :
+            sum += i
+    return sum
+
+# print(f3(3))
 
 # 4) Enter a number and return whether
 # it is divisible by all of the numbers
@@ -104,10 +115,19 @@ def f18 (L):
 
 # print(f18(['123', '3456', '4532','2']))
 
-# 20)
+# 20) Receive a string and return the multi of all the numbers in it
 
+def f20(s):
+    num = '0123456789'
+    mul=1
+    for l in s:
+        if l in num:
+            mul*= int(l)
+    return mul
 
-# 21) 
+# print(f20('dgvhb217b'))
+
+# 21) Receive a string and when you see # then to erase it, and it erases one letter from the end of the word 
 
 def f21(string):
     result =""
@@ -120,12 +140,37 @@ def f21(string):
     
 # print(f21('#ik3l##3d3#df#'))
 
-# 24)
+# 24) A variety of people come to the hospital for treatment.
+# Assume that they are numbered according to the following options:
+# A number starting with the digit 1 is a medical emergency
+# A number starting with 2 = baby;
+# A number starting with 3 = disabled;
+# Any other number = the rest of the people.
+# A medical emergency will be dealt with first. After him, priority will be given to the infants and the disabled 
+# (without any difference between them, according to who arrived first) and at the end the rest of the people in the order of their arrival.
+# Write a function that will take a list of people in order of their arrival, and return a list of the order in which they are handled
+
+def f24(L):
+    L1=[]
+    L2=[]
+    L3=[]
+    for i in range(len(L)):
+        if str(L[i])[0] == 1:
+            L1+=[L[i]]
+        elif str(L[i])[0] == 2 or str(L[i])[0] == 3:
+            L2+=[L[i]]
+        else:
+            L3+=[L[i]]
+    L = L1 + L2 + L3
+    return L
+
+print(f24([456,212,344,110,190,6667,180,55115,22,98]))
 
 # 25) Receive a string, return how many different characters are there in it?
 
-def f25(string):
-    return len(set(string))
+# def f25(s):
+
+#     return len(set(s))
 
 # 26) Take a list of numbers and return how many different digits there are in them (all together)
 
