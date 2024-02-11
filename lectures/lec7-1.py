@@ -30,4 +30,29 @@ def f7():
         x+=2
     print ("bye👋🏼")
     
-f7()
+# f7()
+
+def f8():
+    x=10
+    y=23
+    while x<20:
+        print(x,y)
+        x+=1
+        y*=2
+        if y>1000:
+            break
+
+# f8()
+
+# 1/2 + 1/3 + 1/4 + 1/5 ...
+#  print all of them but not sum bigger than 6
+
+def f9():
+    sum = 0.5
+    x=2
+    while sum<3:
+        print(x,sum)
+        sum = sum +1/x
+        x+=1
+
+# f9()
