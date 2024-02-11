@@ -64,9 +64,9 @@ def f10A():
     abc='poiuytrewqasdfghjklmnbvcxz'
     letters=[]
     words=[]
-    while len(letters)<25:
-        word = input ('enter word: ')
-        word = words + [word]
+    while len(letters)<26:
+        word = input('enter word: ')
+        words = words + [word]
         for letter in word:
             if letter not in letters and letter in abc:
                 letters = letters + [letter]
@@ -82,8 +82,8 @@ def f10B():
         x= input('enter a word :')
         words = words + [x]
         letters = letters -set(x)
-        print('there were', len(words), 'words:')
-        print(words)
+    print('there were', len(words), 'words:')
+    print(words)
         
 # f10B()
 
