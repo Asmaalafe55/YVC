@@ -164,13 +164,13 @@ def f24(L):
     L = L1 + L2 + L3
     return L
 
-print(f24([456,212,344,110,190,6667,180,55115,22,98]))
+# print(f24([456,212,344,110,190,6667,180,55115,22,98]))
 
 # 25) Receive a string, return how many different characters are there in it?
 
-# def f25(s):
+def f25(s):
 
-#     return len(set(s))
+    return len(set(s))
 
 # 26) Take a list of numbers and return how many different digits there are in them (all together)
 
