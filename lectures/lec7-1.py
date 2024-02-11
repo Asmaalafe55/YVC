@@ -51,8 +51,53 @@ def f9():
     sum = 0.5
     x=2
     while sum<3:
+        sum = sum + 1/x
         print(x,sum)
-        sum = sum +1/x
         x+=1
 
 # f9()
+
+# Receive from the user many words, until we have all the letters in alphabet
+# then to print all the words, and how many words we have
+
+def f10A():
+    abc='poiuytrewqasdfghjklmnbvcxz'
+    letters=[]
+    words=[]
+    while len(letters)<25:
+        word = input ('enter word: ')
+        word = words + [word]
+        for letter in word:
+            if letter not in letters and letter in abc:
+                letters = letters + [letter]
+    print ('there were',len(words), 'words:')
+    print (words)
+
+# f10A()
+
+def f10B():
+    letters = set('poiuytrewqasdfghjklmnbvcxz')
+    words =[]
+    while len(letters)>0:
+        x= input('enter a word :')
+        words = words + [x]
+        letters = letters -set(x)
+        print('there were', len(words), 'words:')
+        print(words)
+        
+# f10B()
+
+# if the number is even to divine by 2
+# else to multiple by 3 and add 1
+
+def f11(N):
+    L=[N]
+    while N>1:
+        if N%2==0:
+            N= N//2
+        else:
+            N = N*3 +1
+        L = L +[N]
+    return L
+
+# f11(5)
