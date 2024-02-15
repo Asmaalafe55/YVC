@@ -1,4 +1,4 @@
-# in page 8
+# in chapter 8
 def f9():
     lst = []
     steps = 0
@@ -12,9 +12,9 @@ def f9():
 
 # f9()
 
-# in page 9
+# in chapter 9
 
- # 4)
+ # 1)
  
 def q4():
     string = input("Enter a word: ")
@@ -37,3 +37,40 @@ def f4(L1,L2):
     return max
 
 # print(f4([-3,2,4],[-7,-10,2]))
+
+
+# 5)
+
+def f5(L1,L2):
+    counter=0 
+    for i in range(len(L1)):
+        for j in range(len(L2)):
+            if L1[i]*L2[j]>48 and L1[i]*L2[j]<75:
+                counter+=1
+    return counter
+
+# print(f5([1,2,5,7,10],[2,7,8,11]))
+
+
+# 6)
+
+def f6(L1,L2):
+    min=0 
+    for i in range(len(L1)):
+        for j in range(len(L2)):
+            if L1[i]-L2[j]< min:
+                min = L1[i]-L2[j]
+            if L2[i]-L1[j]< min:
+                min = L2[i]-L1[j]
+    return min
+
+# print(f6([31,82,146],[7,40,200,1789])) ///// to check
+
+# 9)
+
+def f9(word):
+    for i in range(len(word)):
+        print (word[:i]+ '*' + word[i+1:])
+
+f9('abcd')
+
