@@ -72,5 +72,36 @@ def f9(word):
     for i in range(len(word)):
         print (word[:i]+ '*' + word[i+1:])
 
-f9('abcd')
+# f9('abcd')
+
+# 10)
+
+def f10(L):
+    sum = 0
+    for i in range(len(L)):
+        for j in range(len(str(L[i]))):
+            word = str(L[i])
+            l = int(word[j])
+            sum = sum + l   
+        if sum == 34:
+            return True
+        sum = 0
+    return False
+
+# print(f10([1234,567,899]))
+# print(f10([0,67,35899])) 
+
+# 12) 
+
+def f12(L):
+    for i in range(len(L)-1):
+        for j in range(i+1,len(L)): 
+            if L[i]+L[j]==100:
+                return True
+    return False
+
+# print(f12([84,111,78,65]))
+# print(f12([84,111,78,66])) // to check
+
+         
 
