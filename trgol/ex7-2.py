@@ -26,3 +26,14 @@ def q4():
             
 # q4()
 
+# 4)
+
+def f4(L1,L2):
+    max=L1[0]*L2[0]
+    for i in range(0,len(L1)):
+        for j in range(0,len(L2)):
+            if L1[i]*L2[j]>max:
+                max = L1[i]*L2[j]
+    return max
+
+# print(f4([-3,2,4],[-7,-10,2]))
