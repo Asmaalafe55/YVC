@@ -32,3 +32,20 @@ def f15 (L):
 # print(f15([['a','bc'],['qwerty'],['asd','poiu','jj']]))
 
 
+# 16) Each list in the lists represents a customer. The first member is his name,
+# and the rest amounts of purchases he made. Return a list with the names of the
+# customers who bought at least 3 times and for a total of 100 or more
+
+def f16(L):
+    sum =0 
+    L1 =[]
+    for array in L :
+        if len(array)>=4:
+            for j in range(1,len(array)) :
+                sum += array[j]
+            if sum >=100:
+                L1 += [array[0]]
+            sum=0
+    return L1
+                 
+# print(f16([['A',200,300],['B',4,6,3,7,5], ['QWE',45,67,1,30],['ZZ',50,30,20]]))
