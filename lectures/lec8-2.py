@@ -39,3 +39,6 @@ def f(L1):
     return L2
 
 # print(f(['aoiuie','jhvoyi','jkizaeou']))
+
+#  write a function that receives from the user how many words he wants
+# to ask and he writes the words. and 
