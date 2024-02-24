@@ -148,20 +148,29 @@ def f20(L):
 
 # print(f20([[11,20,3],[444,666,80],[900,55]]))
 
-    
+# 21)
+
+def f21(L):
+    l=[]*2
+    l += [len(L)]
+    l += [len(L[0])]
+    return l
+
+# print(f21([[11,20],[444,666],[900,55]]))    
 
 # 23) 
+
 def f23(L):
-    print(L)
-    cols = len(range(L[0]))
-    sums =[0] * cols
-    for l in range(len(L)):
-        for j in range(l):
-            sums[j] = sums[j] + L[l][j]
+    cols = len(L[0])
+    sums =[0] * cols 
+    for i in range(len(L)):
+        for j in range(len(L[i])):
+            sums[j] += L[i][j]
     return sums
 
 # print(f23([[1,2,1,1],[2,3,2,3],[4,5,4,5]]))
-# to check this 
+
+
 
 # 29) 
 def f29D ():
