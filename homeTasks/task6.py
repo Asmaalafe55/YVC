@@ -213,10 +213,17 @@ def f27(s,n):
             print(s[j]*n,'', end='')
         print()
 
-f27('QWER',3)
-    
+# f27('QWER',3)
 
+# 28)
 
+def f28(N):
+    for i in range(N):
+        for j in range(N-i):
+            print('X'*(i-j),'',end='')
+        print()
+
+# f28(6)
 
 # 29) 
 def f29D ():
@@ -228,3 +235,5 @@ def f29D ():
             x=x+i
         print()   
 # f29()
+
+# 31)
