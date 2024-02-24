@@ -184,6 +184,36 @@ def f25(L):
 
 # print(f25([[1,2,3],[4,5,6],[7,8,9]]))
     
+# 26)
+
+def f26(N):
+    for i in range(N):
+        for j in range(N):
+            print('#',end="")
+        print()
+    print()
+    for i in range(N):
+        for j in range(i+1):
+            print('#',end="")
+        print()
+    print()
+    for i in range(N):
+        for j in range(N-i):
+            print('#',end="")
+        print()
+    print()
+    
+# f26(4)
+
+# 27)
+
+def f27(s,n):
+    for i in range(n):
+        for j in range(len(s)):
+            print(s[j]*n,'', end='')
+        print()
+
+f27('QWER',3)
     
 
 
