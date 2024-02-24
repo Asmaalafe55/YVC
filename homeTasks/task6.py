@@ -80,8 +80,21 @@ def f11(L):
 # print(f11([30,87,111,70,9]))
 # print(f11([30,87,13,70,91]))
 
+# 14)
+def minimum(L):
+    n = L[0]
+    for i in L:
+        if i<n:
+            n=i
+    return n
 
+def f14(L):
+    Lst = []
+    for l in L:
+        Lst += [minimum(l)]
+    return Lst
 
+# print(f14([[11,4,55],[7,7,8],[90],[10,20,44]]))
 
 # 23) 
 def f23(L):
