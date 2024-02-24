@@ -96,6 +96,43 @@ def f14(L):
 
 # print(f14([[11,4,55],[7,7,8],[90],[10,20,44]]))
 
+# 17)
+
+def f17(L):
+    Lst =[]
+    for i in L:
+        for j in i:
+            Lst += [j]
+    return Lst
+
+# print(f17([[1,8],['w'],[4,'a',0]]))
+
+# 18)
+
+def f18(L):
+    counter=0
+    Lst = f17(L)
+    for i in Lst:
+        if i%2==0:
+            counter +=1
+    return counter
+
+# print(f18([[1,2,3],[44,66,88],[99]]))
+
+# 19)
+
+def f19(L):
+    Lst = f17(L)
+    lst=[]
+    for i in Lst:
+        if i%2!=0:
+            lst+=[i]
+    return lst
+
+# print(f19([[1,2,3],[44,66,88],[99]]))
+
+    
+
 # 23) 
 def f23(L):
     print(L)
