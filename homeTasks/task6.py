@@ -34,6 +34,54 @@ def f5(L1,L2):
 
 # 6) 
 
+def negative(n):
+    if n<0:
+        return -n
+    else: 
+        return n
+
+def f6(L1,L2):
+    min = L1[0]-L2[0]
+    for i in L1:
+        for j in L2:
+            if negative(i-j)<min:
+                min= negative(i-j)
+            if negative(j-i)<min:
+                min = negative(j-i)
+    return min
+
+# print(f6([31,82,146],[7,40,200,1789]))
+
+# 10)
+def sumi(n):
+    s=0
+    n=str(n)
+    for l in n:
+        s += int(l)
+    return s
+
+def f10(L):
+    for i in L:
+        if sumi(i) == 34:
+            return True
+    return False
+
+# print(f10([1234,567,899]))
+# print(f10([123,67,35899]))
+
+# 11)
+
+def f11(L):
+    for i in range(len(L)-1):
+        if L[i]+L[i+1] ==100:
+            return True
+    return False
+
+# print(f11([30,87,111,70,9]))
+# print(f11([30,87,13,70,91]))
+
+
+
 
 # 23) 
 def f23(L):
