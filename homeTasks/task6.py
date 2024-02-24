@@ -1,3 +1,5 @@
+# Task 6, Chapter 9
+
 # 2) 
 def hezqa(n):
     return 2**n
@@ -219,7 +221,7 @@ def f27(s,n):
 
 def f28(N):
     for i in range(N):
-        for j in range(N-i):
+        for j in range(N):
             print('X'*(i-j),'',end='')
         print()
 
@@ -237,3 +239,30 @@ def f29D ():
 # f29()
 
 # 31)
+def inCol(n):
+    x = ['-']*8
+    x[n]= 'X'
+    s=''
+    for i in range(len(x)):
+        s += x[i]
+    print(s)
+# inCol(3)
+def f31(L):
+    l = len(L)
+    j=0
+    for i in range(9):
+        if l!=0:
+            if i == L[j][0]:
+                inCol(L[j][1])
+            else :
+                print('-'*8)
+            j+=1
+        l-=1
+    
+# f31([[1,2],[3,4],[6,5]])
+
+# NOTES : 
+# 1) I did not complete question number 26
+# 2) I did not solve question number 28
+# 3) I did not complete question number 29
+# 4) I did not solve question number 31 till the end
