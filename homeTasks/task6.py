@@ -131,6 +131,23 @@ def f19(L):
 
 # print(f19([[1,2,3],[44,66,88],[99]]))
 
+# 20)
+def two_letters(n):
+    n=str(n)
+    if len(n)==2:
+        return True
+    return False
+
+def f20(L):
+    Lst = f17(L)
+    sumi =0
+    for i in Lst:
+        if two_letters(i):
+            sumi +=i
+    return sumi
+
+# print(f20([[11,20,3],[444,666,80],[900,55]]))
+
     
 
 # 23) 
