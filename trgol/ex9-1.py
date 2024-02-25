@@ -49,5 +49,22 @@ def f4():
     s= ''.join(s)
     return s
 # print(f4('hello'))
-    
-    
+
+# 7)
+def f7():
+    string = input ("enter a string: ")
+    string = string.replace(' ','')
+    # set1 = set()
+    # for letter in string:
+    #     set1.add(letter)
+    apper = set(string)
+    print('Apper: ',''.join(apper))
+    notApper = set()
+    for i in list(range(ord('a'),ord('z')+1)):
+        if chr(i) not in apper:
+            notApper.add(chr(i))
+    print('notApper: ',''.join(notApper))   
+# f7()
+
+
+
