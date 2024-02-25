@@ -42,4 +42,35 @@ def f2():
 
 # f2()
 
+print('asklmnlakaa'.count('a'))
+print('asklmnlakaa'.count('M'))
+print(''.count('a'))
+print('as'.count(''))
+print('asklmnlakaa'.count('as'))
+print('aaaaaaa'.count('aa'))
+
+
+def f3(s):
+    for i in 'abcd':
+        print(i, s.count(i), s.count(i.upper()))
+# f3('aabbbbbBBcccCCDDDDd')
+
+print('asklmnlakaa'.find('m'))
+print('asklmnlakaa'.find('M'))
+print('asklmnlakaa'.replace('a','#'))
+print('asklmnlakaa'.replace('a','#',3))
+print('ask lmn lak aa'.split()) # --> ['ask','lmn','lak','aa']
+# print('asklmnlakaa'.split(2)) # --> ['asklmn','lakaa']
+L=['ASC','ASW','HTB','REV']
+print('--'.join(L)) # --> 'ASC--ASW--HTB--REV'
+
+
+def f4():
+    sentence = input('enter a sentence: ')
+    words = sentence.split()
+    for word in words:
+        print(word, len(word))
+# f4()
+
+
 
