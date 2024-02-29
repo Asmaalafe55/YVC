@@ -32,3 +32,16 @@ def f29(s):
         summ+= int(n)
     return summ
 print(f29('hgdgy645dc'))
+
+def f29B(s):
+    s2=''
+    for tav in s:
+        if tav in '0987654321':
+            s2+= tav
+        else:
+            s2+= '+'
+    while(s2[-1]=='+'):
+        s2 = s2[:-1]
+    return eval(s2)
+print(f29B('hgdgy645dc'))
+
