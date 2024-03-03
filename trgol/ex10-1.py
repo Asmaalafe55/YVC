@@ -30,4 +30,20 @@ def f10(L):
         
     return result
 
-print(f10(['qwer','zzz','poiuytr','ghj','abc','qq','hjkl']))
+# print(f10(['qwer','zzz','poiuytr','ghj','abc','qq','hjkl']))
+
+def f14():
+    for i in range(10,100):
+        for j in range(0,100):
+            result = i*j
+            if sorted(str(result)) == sorted(str(i)+ str(j)):
+                print(i, 'x', j, '=', result)
+# f14()
+
+def f17(lst):
+    print(lst)
+    for i in range(len(lst)-1):
+        lst [-2-i] = lst[-2-i ]+ lst[-1-i]
+        lst[-1-i] =[]
+        print(lst)
+# f17([[8],[1,3],[9],[2],[4,7]])
