@@ -14,6 +14,14 @@ def f():
 
 # Chapter 11
 
+def f1(lst):
+    result =[]
+    for value in lst:
+        if value>min (lst) and value < max(lst) :
+            result.append(value)
+    return result
+# f1([4,5,6,4,10,13,4,5,8,9,9,11,13])
+
 def f10(L):
     lengths = set()
     result = []
