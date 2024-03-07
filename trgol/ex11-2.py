@@ -38,14 +38,12 @@ def f20(current,floors):
     for floor in floors:
         if floor >= current:
             up.append(floor)
-            print(up)
         else:
             down.append(floor)
-    print(sorted(up)+sorted(down))
-    down.sort()
-    return (sorted(up) + sorted(down))[::-1] # [from: to(inc.): steps]
+    return sorted(up) + sorted(down)[::-1] # [from: to(inc.): steps]
     # return (up.extend(down))[::-1] # [from: to(inc.): steps]
-# print(f20(8,[2,3,9,7,1])) # here i have a problem
+    
+# print(f20(8,[2,3,9,7,1])) 
 
 def f21A(lst):
     result =[]
