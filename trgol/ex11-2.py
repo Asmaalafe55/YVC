@@ -31,3 +31,16 @@ def f13(L):
     
 # f13([['Alfano',45,10],['Boito',7,56,89],['Cilea',99,22,21],['Donizetti',78,66,88,90,84]])
 
+
+def f20(current,floors):
+    up=[]
+    down =[]
+    for floor in floors:
+        if floor>= current:
+            up.append(floor)
+        else:
+            down.append(floor)
+    up.sort()
+    down.sort()
+    return (up + down)[::-1] # [from: to(inc.): steps]
+    # return (up.extend(down))[::-1] # [from: to(inc.): steps]
