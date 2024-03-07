@@ -33,14 +33,47 @@ def f13(L):
 
 
 def f20(current,floors):
-    up=[]
-    down =[]
+    up = []
+    down = []
     for floor in floors:
-        if floor>= current:
+        if floor >= current:
             up.append(floor)
+            print(up)
         else:
             down.append(floor)
-    up.sort()
+    print(sorted(up)+sorted(down))
     down.sort()
-    return (up + down)[::-1] # [from: to(inc.): steps]
+    return (sorted(up) + sorted(down))[::-1] # [from: to(inc.): steps]
     # return (up.extend(down))[::-1] # [from: to(inc.): steps]
+# print(f20(8,[2,3,9,7,1])) # here i have a problem
+
+def f21A(lst):
+    result =[]
+    for i in range(len(lst)):
+        for j in range(len(lst)):
+            temp = [] # temporary list for each pair
+            temp.append(lst[i])
+            temp.append(lst[j])
+            result.append(temp)
+    return result
+
+# print(f21A([3,6,7,9]))
+
+def f21A2(lst):
+    result =[]
+    for i in range(len(lst)):
+        for j in range(len(lst)): 
+            result.append([lst[i],lst[j]])
+    return result
+
+# print(f21A2([3,6,7,9]))
+
+def f21B(lst):
+    result =[]
+    for i in range(len(lst)):
+        for j in range(i,len(lst)):
+        # for j in range(len(lst[i:])):
+            result.append([lst[i],lst[j]])
+    return result
+
+# print(f21B([3,6,7,9]))
