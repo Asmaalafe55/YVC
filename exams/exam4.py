@@ -14,3 +14,18 @@ def q1(N,L):
 
 # q1(3,[11,88,90,23])
 # q1(5,[9,7,2])
+
+
+def q1_v2(N,L):
+    # [11,88,90,23]
+    index=0
+    for i in range(N):
+        for j in range(N):
+            print(L[index], end=' ')
+            index+=0
+            if index ==len(L):
+                index=0
+        print()
+
+# q1_v2(3,[11,88,90,23])
+# q1_v2(5,[9,7,2])
