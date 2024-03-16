@@ -50,6 +50,37 @@ def f4():
     return s
 # print(f4('hello'))
 
+# 5)
+
+def f5():
+    L=['']*4
+    print(L)
+    L[0] = input('word # : ')
+    L[1] = input('word # : ')
+    L[2] = input('word # : ')
+    L[3] = input('word # : ')
+    for i in range(4):
+        print(L[i],end=' ')
+    print()
+    for i in range(3,-1,-1):
+        print(L[i],end=' ')
+    print()
+    for i in range(3,-1,-1):
+        for j in range (len(L[i]),-1,-1):
+            print(L[j],end=' ')
+        print(' ')
+# f5() # needs to check 
+
+# 6)
+
+def f6(s):
+    s=s.lower()
+    set1=set(s)
+    set1.discard(' ')
+    return len(set1)
+# print(f6('NICE exercise'))
+        
+    
 # 7)
 def f7():
     string = input ("enter a string: ")
@@ -66,5 +97,19 @@ def f7():
     print('notApper: ',''.join(notApper))   
 # f7()
 
-
-
+def f7A():
+    set1 =set()
+    s=input('Enter a text: ')
+    for i in s:
+        if i!=' ':
+            set1.add(i)
+    appear=''
+    not_appear =''
+    for i in 'qwertyuioplkjhgfdsaxzcvbnm':
+        if i in set1:
+            appear +=i
+        else:
+            not_appear+=i
+    print('appear: ',appear)
+    print('not appear: ',not_appear)
+# f7A()
