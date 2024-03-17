@@ -19,4 +19,4 @@ def f22(L):
     else:
         print('Nobody won')
 
-f22(['X  ','OX ',' OX'])
+# f22(['X  ','OX ',' OX'])
