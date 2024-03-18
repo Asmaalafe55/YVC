@@ -1,6 +1,9 @@
 #Chapter 11
 
-# f11
+# 16) Write a function that will take in a list of lists (containing numbers) and slowly empty
+#  it. It will print all the emptying steps, until an empty list is obtained. The members are
+#  deleted one by one, after which the list that contained them is also deleted.
+
 def f16(L):
     print(L)
     while L:

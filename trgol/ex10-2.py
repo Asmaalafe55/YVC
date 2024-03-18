@@ -1,6 +1,10 @@
 # Chapter 11
 
-# 22)
+# 22) Write a function that takes as a parameter a list containing 3 strings.
+#  Each string Each string consists of exactly 3 characters, the characters are either space
+#  or X or O, the list represents a game. In the list, the winner is the one who has 3
+#  identical characters diagonally or in a column or row, you will display the winner by
+#  an appropriate message
 
 def f22(L):
     sol =[ ['00','01','02'],['10','11','12'],['20','21','22'],['00','10','20'],['01','11','21'],['02','12','22'],['00','11','22'],['22','11','00']]
