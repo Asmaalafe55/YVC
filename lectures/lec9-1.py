@@ -1,26 +1,26 @@
 # Chapter 10
 
 # to convert all the small letters to capital
-# x= 'heLLO hi 12!'
-# print(x.upper())
-# print(x.isupper()) -- True/False
+x= 'LLO '
+print(x.upper())
+print('111',x.isupper()) #-- True/False
 
 # to convert all the capital letters to small letters
-# x= 'heLLO hi 12!'
-# print (x.lower())
-# print (x.islower()) -- True/False
+x= 'heLLO hi 12!'
+print (x.lower())
+print (x.islower()) #-- True/False
 
 # to make only the first letter is capital
-# x= 'heLLO hi 12!'
-# print(x.capitalize())
+x= 'heLLO hi 12!'
+print(x.capitalize())
 
 # to make every word start with capital letter
-# x= 'heLLO hi 12!'
-# print(x.title())
+x= 'heLLO hi 12!'
+print(x.title())
 
 # to swap the small letters to be capital and the capital to be small letters
-# x= 'heLLO 12!'
-# print(x.swapcase())
+x= 'heLLO 12!'
+print('333',x.swapcase())
 
 def f1():
     # its only works for string not integer
