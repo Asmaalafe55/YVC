@@ -32,7 +32,7 @@ def f3(L):
                 # a mistake, it prints the same two persons twice
                 # i should put the persons in a list and the to print
 
-# f3([['a','b'],['b','a'],['c','a'],['d','b']]) 
+# f3([['a','b'],['b','a'],['c','a'],['d','b']])
                 
 def f41(n):
     return 6/n
@@ -48,15 +48,15 @@ def f4():
     lst=[]
     counter=0
     for i in L:
-        if f41(float(i))>0:
+        if 6/float(i)>0:
             counter +=1
-        if f42(float(i))>0:
+        if 2-float(i)>0:
             counter+=1
-        if f43(float(i))>0:
+        if float(i)+1>0:
             counter+=1
         if counter==2:
             lst+=[float(i)]
-            counter=0 # this is a mistake, i should put it in the outside loop
+        counter=0 # this is a mistake, i should put it in the outside loop
     return lst 
 
 # print(f4())
