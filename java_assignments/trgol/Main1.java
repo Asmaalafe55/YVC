@@ -1,9 +1,13 @@
-// define 3 variables that have : int number and 2 double numbers
-// it calculates and prints to the screen : mul of 3 numbers, average of 3 numbers, the largest number of them,  remainder of dividing two real numbers
 // package main;
 
-public class Ex1{
+public class Main1{
 public static void main (String[] argv){
+
+// Ex1) define 3 variables that have : int number and 2 double numbers
+// it calculates and prints to the screen :
+// mul of 3 numbers, average of 3 numbers, the largest number of them,
+// remainder of dividing two real numbers
+
 int firstInt =100;
 double firstDouble = 20;
 double seconedDouble =30;
@@ -31,6 +35,12 @@ public static void calcMax(int a, double b, double c){
     System.out.println("The max of 3 numbers: "+ c);
     }
 }
+
+// Ex2) Write a program that calculates the following formula:
+// Circumference of a circle: R*Pi*2 where Pi is constant and R is the radius of a circle
+// Area of a circle: R*R*Pi
+// Perimeter of a square: side length = 4
+// Area of a square: side length*side length
 
 
 }
