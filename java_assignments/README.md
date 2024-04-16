@@ -1,4 +1,4 @@
-Intended for homework assignments of the 'Introduction to Computer Science' course, first year, semester A, 2024
+Intended for homework assignments of the 'OOP -Java' course, first year, semester B, 2024
 
 Instructions:
 1: In the terminal go to source-projects/YVC
