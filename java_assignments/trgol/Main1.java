@@ -41,6 +41,26 @@ public static void calcMax(int a, double b, double c){
 // Area of a circle: R*R*Pi
 // Perimeter of a square: side length = 4
 // Area of a square: side length*side length
+public static void calculatesFunction(){
+    
+}
 
+
+
+// Ex3)
+public static void printMultipleTable(){
+    for (int i=1;i<=10;i++){
+        for(int j=1;j<=10;j++){
+            System.out.println(i+"*"+j+"="+(i*j));
+        }
+    }
+}
+
+// Ex4)
+public static void printUnifid(){
+    for (char ch ='a';ch<='z';ch++){
+        System.out.println(Integer.valueOf(ch));
+    }
+}
 
 }
