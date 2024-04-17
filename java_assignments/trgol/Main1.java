@@ -48,6 +48,15 @@ public static void calculatesFunction(){
 
 
 // Ex3)
+public static void printNumberWithSpaces(int number){
+    while(number!=0){
+        int mod= number %10;
+        number = number/10;
+        System.out.println(mod + " ");
+
+    }
+}
+
 public static void printMultipleTable(){
     for (int i=1;i<=10;i++){
         for(int j=1;j<=10;j++){
