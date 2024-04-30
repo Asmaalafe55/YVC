@@ -16,11 +16,10 @@ public class Application {
 
     for (int i = 0; i < 5; i++) {
       System.out.println("Input a string: ");
-
       arr[i] = input.nextLine();
       System.out.println("Input a number: ");
       sumi += input.nextInt();
-    }
+          }
     System.out.println(" ");
 
     for (int i = 0; i < 5; i++) {
@@ -36,5 +35,6 @@ public class Application {
     }else{
       System.out.println("Small");
     }
+    input.close();
   }
 }
