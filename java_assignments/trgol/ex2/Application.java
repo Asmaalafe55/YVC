@@ -33,6 +33,8 @@ public class Application {
     System.out.println("The root of sum " + Math.sqrt(sumi));
     if (Math.sqrt(sumi) >= 5) {
       System.out.println("Yofe");
+    }else{
+      System.out.println("Small");
     }
   }
 }
