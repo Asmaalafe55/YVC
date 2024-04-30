@@ -1,0 +1,11 @@
+{
+  "overrides": [
+    {
+      "files": "*.java",
+      "options": {
+        "parser": "java",
+        "plugins": ["prettier-plugin-java"]
+      }
+    }
+  ]
+}
