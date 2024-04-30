@@ -31,9 +31,9 @@ public class Application {
             }
         }
         System.out.println("oh oh");
-        System.err.println("The root of sum " + Math.sqrt(sumi));
+        System.out.println("The root of sum " + Math.sqrt(sumi));
         if (Math.sqrt(sumi)>=5){
-System.err.println("Yofe");
+        System.out.println("Yofe");
         }
 
 
