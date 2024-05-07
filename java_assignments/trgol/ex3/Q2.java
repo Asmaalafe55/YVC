@@ -7,7 +7,8 @@ public class Q2 {
         Scanner input = new Scanner(System.in);
         String letters = input.nextLine();
         Q2_checkLetters checkLetters = new Q2_checkLetters(letters);
-        checkLetters.printArray();
+        // checkLetters.printArray();
+        System.out.println(checkLetters.checkAllLetters());
         input.close();
 
     }
