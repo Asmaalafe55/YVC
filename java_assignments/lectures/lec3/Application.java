@@ -9,5 +9,8 @@ public class Application {
 
         account.printAccountReport();
 
+        Rectangle rectangle = new Rectangle(10, 12);
+        rectangle.printRectangleData();
+
     }
 }
