@@ -13,6 +13,9 @@ public class Q1 {
         while (numbers.getNumber()!=1);
 
         System.out.println(numbers.getNumbers());
+
+        input.close();
         
     }
+
 }
