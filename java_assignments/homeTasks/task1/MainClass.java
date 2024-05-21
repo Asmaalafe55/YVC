@@ -1,4 +1,4 @@
-package java_assignments.homeTasks.task1;
+package homeTasks.task1;
 
 import java.util.Scanner;
 
