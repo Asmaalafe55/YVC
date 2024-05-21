@@ -8,10 +8,9 @@ public class Methods {
 		int counter=0;
 		for (String s : arr) {
 			for(int i=0;i<s.length();i++) {
-				if(s.charAt(i)==c) {
-					counter++;
+				if(s.charAt(i)==c) { // if the letter is the same letter as the one that we received "c"
+					counter++; 
 				}
-
 			}
 		}
 		return counter;
@@ -35,41 +34,43 @@ public class Methods {
             }
         }
     }
+    // 3) Write a function that receives a number from the user, when the number of digits
+    //  in it is unknown. The function will break the number into two numbers, where the first
+    //  number includes the even terms of the original number and the second number includes the
+    //  odd terms. The program will print the original number, the two numbers created as well
+    //  as their product. For example if the original number is 123456 then the two new
+    //  numbers will be 135,246 and their product is 33210
 
     public void prntNumbers(){
         Scanner input = new Scanner(System.in);
         int num;
-        num = input.nextInt();
-
-        // 123456 - > 246 135 
-
-        String strNumber = String.valueOf(num); // 123456
-        int[] firstNum = new int[strNumber.length()];
-        int j=0;
-        int[] secondNum = new int[strNumber.length()];
-        int k=0;
-
-        for (int i=0; i<strNumber.length();i++){
-            if(num%10%2==0){
-                firstNum[j] = num%10;
-                j++;
-                num/=10;
+        System.out.println("Enter a number: ");
+        num = input.nextInt(); // receiving a number from the user
+        int first = 0;
+        int secend = 0;
+        int temp = num;
+        while(temp!=0){ // breaking the number into two numbers, odd and even
+            if(temp%10%2 == 0 ){
+                first = first*10+(temp%10);
             }
-            else if(num%10%2 == 1){
-                secondNum[k] = num%10;
-                k++;
-                num/=10;
+            else if(temp%10%2==1){
+                secend = secend*10 + (temp%10);
             }
+            temp/=10;
         }
-
-        // now i have an array of the numbers : [1,3,5]  [2,4,6]
-        // now i have to merge all of them to one number 
-
-        for (int i =0; i<firstNum.length;i++){
-
+        int even = 0;
+        int odd = 0;
+        while(first!=0){ // the numbers are upside down
+            even = even*10 + (first%10);
+            first/=10;
         }
-
-
+        while(secend!=0){
+            odd = odd*10 + (secend%10);
+            secend/=10;
+        }
+        System.out.println("even: " + even);
+        System.out.println("odd: " + odd);
+        System.out.println("sum: " + even*odd);
     }
 
     public void  numbersDigitsSum(int number) {
@@ -104,15 +105,15 @@ public class Methods {
 	      }
 	    }
 	    if(!flag)
-	    	System.out.println("Number : "+num +" is Prime!");
+	    	System.out.println("Number : "+ num +" is Prime!");
 	    else
-	    	System.out.println("Number : "+num +" is not Prime!");
+	    	System.out.println("Number : "+ num +" is not Prime!");
 
 	    if(num%2==0) {
-	    	System.out.println("Number : "+num +" is Even!");
+	    	System.out.println("Number : "+ num +" is Even!");
 	    }
 	    else {
-	    	System.out.println("Number : "+num +" is Odd!");
+	    	System.out.println("Number : "+ num +" is Odd!");
 
 	    }
    }

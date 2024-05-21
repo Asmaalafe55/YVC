@@ -6,6 +6,6 @@
         "parser": "java",
         "plugins": ["prettier-plugin-java"]
         }
-    }
+      }
   ]
 }
