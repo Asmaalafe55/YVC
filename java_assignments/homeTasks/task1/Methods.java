@@ -49,35 +49,36 @@ public class Methods {
     //  as their product.
 
     public void prntNumbers(){
-        Scanner input = new Scanner(System.in);
-        int num;
-        System.out.println("Enter a number: ");
-        num = input.nextInt(); // receiving a number from the user
-        int first = 0;
-        int secend = 0;
-        int temp = num;
-        while(temp!=0){ // breaking the number into two numbers, odd and even
-            if(temp%10%2 == 0 ){
-                first = first*10+(temp%10);
+        try (Scanner input = new Scanner(System.in)) {
+            int num;
+            System.out.println("Enter a number: ");
+            num = input.nextInt(); // receiving a number from the user
+            int first = 0;
+            int secend = 0;
+            int temp = num;
+            while(temp!=0){ // breaking the number into two numbers, odd and even
+                if(temp%10%2 == 0 ){
+                    first = first*10+(temp%10);
+                }
+                else if(temp%10%2==1){
+                    secend = secend*10 + (temp%10);
+                }
+                temp/=10;
             }
-            else if(temp%10%2==1){
-                secend = secend*10 + (temp%10);
+            int even = 0;
+            int odd = 0;
+            while(first!=0){ // the numbers are upside down
+                even = even*10 + (first%10);
+                first/=10;
             }
-            temp/=10;
+            while(secend!=0){
+                odd = odd*10 + (secend%10);
+                secend/=10;
+            }
+            System.out.println("even: " + even);
+            System.out.println("odd: " + odd);
+            System.out.println("sum: " + even*odd);
         }
-        int even = 0;
-        int odd = 0;
-        while(first!=0){ // the numbers are upside down
-            even = even*10 + (first%10);
-            first/=10;
-        }
-        while(secend!=0){
-            odd = odd*10 + (secend%10);
-            secend/=10;
-        }
-        System.out.println("even: " + even);
-        System.out.println("odd: " + odd);
-        System.out.println("sum: " + even*odd);
     }
 
     // 4)A) You must write a function that prints the number of digits of a number
