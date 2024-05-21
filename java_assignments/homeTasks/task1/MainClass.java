@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class MainClass
  {
     public static void main(String[] args) {
-    Methods methods = new Methods();
 
     Scanner input = new Scanner(System.in);
     System.out.println("Please enter 10 numbers: ");
