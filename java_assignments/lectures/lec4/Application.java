@@ -1,5 +1,3 @@
 package lectures.lec4;
 
-public class Application {
-    
-}
+public class Application {}

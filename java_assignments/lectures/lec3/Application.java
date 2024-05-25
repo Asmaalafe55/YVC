@@ -1,16 +1,16 @@
 package lectures.lec3;
 
 public class Application {
-    public static void main(String[] args) {
-        BankAccount account = new BankAccount();
-        System.out.println(account.value);
-        account.value = 2000;
-        System.out.println(account.value);
 
-        account.printAccountReport();
+  public static void main(String[] args) {
+    BankAccount account = new BankAccount();
+    System.out.println(account.value);
+    account.value = 2000;
+    System.out.println(account.value);
 
-        Rectangle rectangle = new Rectangle(10, 12);
-        rectangle.printRectangleData();
+    account.printAccountReport();
 
-    }
+    Rectangle rectangle = new Rectangle(10, 12);
+    rectangle.printRectangleData();
+  }
 }

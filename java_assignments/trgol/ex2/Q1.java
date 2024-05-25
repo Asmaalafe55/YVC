@@ -19,7 +19,7 @@ public class Q1 {
       arr[i] = input.nextLine();
       System.out.println("Input a number: ");
       sumi += input.nextInt();
-          }
+    }
     System.out.println(" ");
 
     for (int i = 0; i < 5; i++) {
@@ -32,7 +32,7 @@ public class Q1 {
     System.out.println("The root of sum " + Math.sqrt(sumi));
     if (Math.sqrt(sumi) >= 5) {
       System.out.println("Yofe");
-    }else{
+    } else {
       System.out.println("Small");
     }
     input.close();
