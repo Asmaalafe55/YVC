@@ -3,7 +3,10 @@ package trgol.ex5;
 public class Appilcation_Q2 {
 
   public static void main(String[] args) {
-    Complix_Q2 complix1 = new Complix_Q2();
-    Complix_Q2 complix2 = new Complix_Q2(1, 2);
+    Complex_Q2 complex1 = new Complex_Q2();
+    Complex_Q2 complex2 = new Complex_Q2(2, 5);
+
+    complex1.printSqrt();
+    complex2.printSqrt();
   }
 }
