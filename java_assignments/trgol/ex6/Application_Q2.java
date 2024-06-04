@@ -17,7 +17,9 @@ public class Application_Q2 {
   }
 
   public static boolean isPower(int result, int base) {
-    if (base * base == result) return true;
+    for (int i = 0; i < result / 2; i++) {
+      if (power(base, i) == result) return true;
+    }
     return false;
   }
 
