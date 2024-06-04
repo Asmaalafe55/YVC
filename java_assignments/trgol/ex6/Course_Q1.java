@@ -1,9 +1,12 @@
 package trgol.ex6;
 
+import java.util.ArrayList;
+
 public class Course_Q1 {
 
   private String name;
   private int id;
+  private ArrayList students = new ArrayList();
 
   public Course_Q1(String name, int id) {
     this.name = name;
@@ -45,6 +48,26 @@ public class Course_Q1 {
       return true;
     } else {
       return false;
+    }
+  }
+
+  public void add(Student_Q1 newStudent) {
+    students.add(newStudent);
+  }
+
+  public boolean getStudent(int id) {
+    for (int i = 0; i < students.size(); i++) {
+      Student_Q1 s = (Student_Q1) students.get(i);
+      if (s.getId() == id) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  public void printStudents() {
+    for (int i = 0; i < students.size(); i++) {
+      System.out.println(students.get(i));
     }
   }
 }
