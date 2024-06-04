@@ -8,8 +8,8 @@ public class Application_Q1 {
 
     Course_Q1 course1 = new Course_Q1("math", 928);
 
-    course1.add(s1);
-    course1.add(s2);
+    course1.addStudent(s1);
+    course1.addStudent(s2);
 
     course1.printStudents();
   }

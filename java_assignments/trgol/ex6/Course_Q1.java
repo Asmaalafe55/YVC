@@ -7,6 +7,7 @@ public class Course_Q1 {
   private String name;
   private int id;
   private ArrayList students = new ArrayList();
+  private final int maxNum = 30;
 
   public Course_Q1(String name, int id) {
     this.name = name;
@@ -51,8 +52,10 @@ public class Course_Q1 {
     }
   }
 
-  public void add(Student_Q1 newStudent) {
-    students.add(newStudent);
+  public void addStudent(Student_Q1 newStudent) {
+    if (students.size() < 30) {
+      students.add(newStudent);
+    }
   }
 
   public boolean getStudent(int id) {
