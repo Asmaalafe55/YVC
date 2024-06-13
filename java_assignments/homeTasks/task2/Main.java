@@ -8,7 +8,7 @@ public class Main {
     // יצירת אובייקט ספרייה
     Library library = new Library();
 
-    //    יצירת ספרים
+    // יצירת ספרים
     Book book1 = new Book("Java Programming", "John Doe", true, 2020);
     Book book2 = new Book();
     Book book3 = new Book("Python Programming", "Jane Smith", true, 2018);
@@ -65,10 +65,10 @@ public class Main {
     LibraryManager manager2 = new LibraryManager(5);
 
     // הוספת ספרנים ומנהלים לספרייה//
-    library.librarians.add(librarian1);
-    library.librarians.add(librarian2);
-    library.libraryManagers.add(manager1);
-    library.libraryManagers.add(manager2);
+    // library.librarians.add(librarian1);
+    // library.librarians.add(librarian2);
+    // library.libraryManagers.add(manager1);
+    // library.libraryManagers.add(manager2);
 
     // השוואת מספר הלקוחות למספר המנהלים
     library.findHighestlCustomersOrLibraryManager();
