@@ -44,4 +44,14 @@ public class Library {
     books.add(b);
     return true;
   }
+
+  public void findHighestlCustomersOrLibraryManager() { // not sure about this !
+    if (customers.size() > libraryManagers.size()) System.out.println(
+      "Customers number are larger that library managers"
+    );
+    if (customers.size() < libraryManagers.size()) System.out.println(
+      "Library managers are larger that customers number"
+    );
+    else System.out.println("ther are equal");
+  }
 }
