@@ -26,10 +26,22 @@ public class Library {
   public boolean addCustomer(Customer c) {
     for (Customer customer : customers) {
       if (customer.getId() == c.getId()) {
+        System.out.println("This customer is allready registered");
         return false;
       }
     }
     customers.add(c);
+    return true;
+  }
+
+  public boolean addBook(Book b) {
+    for (Book book : books) {
+      if (book.getName().equals(b.getName())) {
+        System.out.println("This book is allready existed");
+        return false;
+      }
+    }
+    books.add(b);
     return true;
   }
 }
