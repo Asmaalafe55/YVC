@@ -37,14 +37,9 @@ public class Customer {
       );
       return false;
     }
+    setPhone(phone);
     return true;
   }
-
-  // public boolean equals(Customer c) {
-  //   if (c == null) return false;
-  //   if (this.id != c.getId()) return false;
-  //   return true;
-  // }
 
   public String getName() {
     return name;

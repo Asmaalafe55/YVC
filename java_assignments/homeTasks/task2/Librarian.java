@@ -5,14 +5,14 @@ public class Librarian {
   private String name;
   private int id;
   private String address;
-  private int phoneNumber;
+  private String phoneNumber;
   public String email;
 
   public Librarian(
     String name,
     int id,
     String address,
-    int phoneNumber,
+    String phoneNumber,
     String email
   ) {
     this.name = name;
@@ -26,7 +26,7 @@ public class Librarian {
     this.id = id;
     this.name = "Librarian name";
     this.address = "Librarian address";
-    this.phoneNumber = 0;
+    this.phoneNumber = "000";
     this.email = "Librarian email";
   }
 
@@ -38,11 +38,11 @@ public class Librarian {
     this.name = name;
   }
 
-  public int getPhoneNumber() {
+  public String getPhoneNumber() {
     return phoneNumber;
   }
 
-  public void setPhoneNumber(int phoneNumber) {
+  public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
   }
 
