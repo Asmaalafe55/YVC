@@ -24,17 +24,23 @@ public class Library {
   }
 
   public boolean addCustomer(Customer c) {
+    // looping through the customers array list and looking for the customer that have
+    //  the same id as the id of the new customer
     for (Customer customer : customers) {
       if (customer.getId() == c.getId()) {
         System.out.println("This customer is allready registered");
         return false;
       }
     }
+    // if we did not found the customer by its id
+    // it means that we need to add it
     customers.add(c);
     return true;
   }
 
   public boolean addBook(Book b) {
+    // looping through the books array list and looking for the book that have
+    //  the same name as the name of the new book
     for (Book book : books) {
       if (book.getName().equals(b.getName())) {
         System.out.println("This book is allready existed");
@@ -45,13 +51,13 @@ public class Library {
     return true;
   }
 
-  public void findHighestlCustomersOrLibraryManager() { // not sure about this !
+  public void findHighestlCustomersOrLibraryManager() {
     if (customers.size() > libraryManagers.size()) System.out.println(
       "Customers number are larger that library managers"
     );
     else if (customers.size() < libraryManagers.size()) System.out.println(
       "Library managers are larger that customers number"
     );
-    else System.out.println("ther are equal");
+    else System.out.println("They are equal");
   }
 }
