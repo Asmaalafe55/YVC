@@ -6,20 +6,20 @@ public class Librarian {
   private int id;
   private String address;
   private int phoneNumber;
-  public String mail;
+  public String email;
 
   public Librarian(
     String name,
     int id,
     String address,
     int phoneNumber,
-    String mail
+    String email
   ) {
     this.name = name;
     this.id = id;
     this.address = address;
     this.phoneNumber = phoneNumber;
-    this.mail = mail;
+    this.email = email;
   }
 
   public Librarian(int id) {
@@ -27,7 +27,7 @@ public class Librarian {
     this.name = "Librarian name";
     this.address = "Librarian address";
     this.phoneNumber = 0;
-    this.mail = "Librarian mail";
+    this.email = "Librarian email";
   }
 
   public String getName() {
@@ -57,8 +57,8 @@ public class Librarian {
       address +
       ", phoneNumber=" +
       phoneNumber +
-      ", mail=" +
-      mail +
+      ", email=" +
+      email +
       "]"
     );
   }
