@@ -16,9 +16,12 @@ public class LibraryManager {
     String email
   ) {
     this.name = name;
-    if (id % 1000000 == 2 && id % 10000000 != 0) { // i have to check if the id contains 7 digits and the seconed digit is equals 2
+    // casting the id to string and getting the length of it
+    int length = String.valueOf(id).length();
+    if (length == 7) {
       this.id = id;
     } else {
+      // if the id's lenght is not equal to 7
       this.id = 0;
     }
     this.address = address;
@@ -72,5 +75,22 @@ public class LibraryManager {
 
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  @Override
+  public String toString() {
+    return (
+      "LibraryManager: [name=" +
+      name +
+      ", id=" +
+      id +
+      ", address=" +
+      address +
+      ", phone=" +
+      phone +
+      ", email=" +
+      email +
+      "]"
+    );
   }
 }

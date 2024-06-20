@@ -1,5 +1,8 @@
 package homeTasks.task2;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Book {
 
   private String name;
@@ -23,22 +26,31 @@ public class Book {
     this.name = "Disney";
     this.author = "";
     this.available = false;
-
-    // needs to get the first digit from the user !!
-    // num = scanner.nextInt();
-    // this.publishedYear = num*1000;
-
+    try ( // initializing a Scanner object
+      Scanner scanner = new Scanner(System.in)
+    ) {
+      System.out.println("Enter the year of the book: ");
+      int x = scanner.nextInt();
+      // needs to get the first digit from the user
+      this.publishedYear = x * 1000;
+      scanner.close();
+    }
     this.publishedYear += generateRandomYear();
   }
 
   private int generateRandomYear() {
-    return 111; // needs to get rendom number of 3 digits
+    // initializing a Random object
+    Random random = new Random();
+
+    // generating a random integer from 0 to 899, then add 100
+    int x = random.nextInt(900) + 100;
+    return x; // needs to get rendom number of 3 digits
   }
 
   @Override
   public String toString() {
     return (
-      "Book [name=" +
+      "Book: [name=" +
       name +
       ", author=" +
       author +

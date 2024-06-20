@@ -23,8 +23,8 @@ public class Librarian {
   }
 
   public Librarian(int id) {
-    this.id = id;
     this.name = "Librarian name";
+    this.id = id;
     this.address = "Librarian address";
     this.phoneNumber = "000";
     this.email = "Librarian email";
@@ -49,7 +49,7 @@ public class Librarian {
   @Override
   public String toString() {
     return (
-      "Librarian [name=" +
+      "Librarian: [name=" +
       name +
       ", id=" +
       id +

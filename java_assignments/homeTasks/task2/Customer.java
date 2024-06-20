@@ -23,8 +23,8 @@ public class Customer {
   }
 
   public Customer(int memberId) {
-    id = memberId;
     this.name = "Customer name";
+    id = memberId;
     this.address = "Customer address";
     this.phone = "0";
     this.email = "Customer email";
@@ -37,7 +37,7 @@ public class Customer {
       );
       return false;
     }
-    setPhone(phone);
+    this.phone = phone;
     return true;
   }
 
@@ -79,5 +79,22 @@ public class Customer {
 
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  @Override
+  public String toString() {
+    return (
+      "Customer: [name=" +
+      name +
+      ", id=" +
+      id +
+      ", address=" +
+      address +
+      ", phone=" +
+      phone +
+      ", email=" +
+      email +
+      "\n]"
+    );
   }
 }

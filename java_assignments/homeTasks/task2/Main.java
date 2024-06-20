@@ -1,7 +1,5 @@
 package homeTasks.task2;
 
-import java.util.ArrayList;
-
 public class Main {
 
   public static void main(String[] args) {
@@ -65,12 +63,13 @@ public class Main {
     LibraryManager manager2 = new LibraryManager(5);
 
     // הוספת ספרנים ומנהלים לספרייה//
-    // library.librarians.add(librarian1);
-    // library.librarians.add(librarian2);
-    // library.libraryManagers.add(manager1);
-    // library.libraryManagers.add(manager2);
+    library.getLibrarians().add(librarian1);
+    library.getLibrarians().add(librarian2);
+    library.getLibraryManagers().add(manager1);
+    library.getLibraryManagers().add(manager2);
 
     // השוואת מספר הלקוחות למספר המנהלים
     library.findHighestlCustomersOrLibraryManager();
+    System.out.println(library.toString());
   }
 }

@@ -6,13 +6,10 @@ public class Library {
 
   // List of all the books in the system
   private ArrayList<Book> books;
-
   // List of all the customers in the system
   private ArrayList<Customer> customers;
-
   // List of all the librarians in the system
   private ArrayList<Librarian> librarians;
-
   // List of all the library managers in the system
   private ArrayList<LibraryManager> libraryManagers;
 
@@ -47,6 +44,8 @@ public class Library {
         return false;
       }
     }
+    // if we did not found the book by its name
+    // it means that we need to add it
     books.add(b);
     return true;
   }
@@ -59,5 +58,52 @@ public class Library {
       "Library managers are larger that customers number"
     );
     else System.out.println("They are equal");
+  }
+
+  public ArrayList<Book> getBooks() {
+    return books;
+  }
+
+  public void setBooks(ArrayList<Book> books) {
+    this.books = books;
+  }
+
+  public ArrayList<Customer> getCustomers() {
+    return customers;
+  }
+
+  public void setCustomers(ArrayList<Customer> customers) {
+    this.customers = customers;
+  }
+
+  public ArrayList<Librarian> getLibrarians() {
+    return librarians;
+  }
+
+  public void setLibrarians(ArrayList<Librarian> librarians) {
+    this.librarians = librarians;
+  }
+
+  public ArrayList<LibraryManager> getLibraryManagers() {
+    return libraryManagers;
+  }
+
+  public void setLibraryManagers(ArrayList<LibraryManager> libraryManagers) {
+    this.libraryManagers = libraryManagers;
+  }
+
+  @Override
+  public String toString() {
+    return (
+      "Library:\n [\nbooks=" +
+      books +
+      ",\n customers=" +
+      customers +
+      ",\n librarians=" +
+      librarians +
+      ",\n libraryManagers=" +
+      libraryManagers +
+      "]"
+    );
   }
 }
