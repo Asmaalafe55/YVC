@@ -2,12 +2,6 @@ package homeTasks.task3;
 
 public class Customer extends AbstractPerson {
 
-  private String name;
-  private int id;
-  private String address;
-  private String phone;
-  private String email;
-
   public Customer(
     String name,
     int id,
@@ -15,19 +9,11 @@ public class Customer extends AbstractPerson {
     String phone,
     String email
   ) {
-    this.name = name;
-    this.id = id;
-    this.address = address;
-    this.phone = phone;
-    this.email = email;
+    super(name, id, address, phone, email);
   }
 
   public Customer(int memberId) {
-    this.name = "Customer name";
-    id = memberId;
-    this.address = "Customer address";
-    this.phone = "0";
-    this.email = "Customer email";
+    super("Customer name", memberId, "Customer address", "0", "Customer email");
   }
 
   public boolean addPhoneNumber(String phone) {

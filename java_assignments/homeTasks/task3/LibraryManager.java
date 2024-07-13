@@ -2,12 +2,6 @@ package homeTasks.task3;
 
 public class LibraryManager extends AbstractPerson {
 
-  private String name;
-  private int id;
-  private String address;
-  private String phone;
-  private String email;
-
   public LibraryManager(
     String name,
     int id,
@@ -15,26 +9,27 @@ public class LibraryManager extends AbstractPerson {
     String phone,
     String email
   ) {
-    this.name = name;
-    // casting the id to string and getting the length of it
-    int length = String.valueOf(id).length();
-    if (length == 7) {
-      this.id = id;
-    } else {
-      // if the id's lenght is not equal to 7
-      this.id = 0;
-    }
-    this.address = address;
-    this.phone = phone;
-    this.email = email;
+    super(name, validateId(id), address, phone, email);
   }
 
   public LibraryManager(int memberId) {
-    id = memberId;
-    this.name = "Library name";
-    this.address = "Library address";
-    this.phone = "0";
-    this.email = "Library email";
+    super(
+      "Library Manager",
+      validateId(memberId),
+      "Default Library Address",
+      "0",
+      "librarymanager@example.com"
+    );
+  }
+
+  // Method to validate ID (ensures ID length is exactly 7 digits)
+  private static int validateId(int id) {
+    int length = String.valueOf(id).length();
+    if (length == 7) {
+      return id;
+    } else {
+      return 0; // Return default ID or handle error as needed
+    }
   }
 
   public String getName() {

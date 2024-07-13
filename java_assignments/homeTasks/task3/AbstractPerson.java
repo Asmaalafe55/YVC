@@ -2,24 +2,38 @@ package homeTasks.task3;
 
 public abstract class AbstractPerson implements Person, Display {
 
-  private String name;
-  private int id;
-  private String address;
-  private String phone;
-  private String email;
+  protected String name;
+  protected int id;
+  protected String address;
+  protected String phone;
+  protected String email;
+
+  public AbstractPerson(
+    String name,
+    int id,
+    String address,
+    String phone,
+    String email
+  ) {
+    this.name = name;
+    this.id = id;
+    this.address = address;
+    this.phone = phone;
+    this.email = email;
+  }
 
   @Override
   public void printDetails() {
     System.out.println(
-      "Name:" +
+      "Name: " +
       name +
-      "Id:" +
+      ", Id: " +
       id +
-      "address:" +
+      ", Address: " +
       address +
-      "Phone:" +
+      ", Phone: " +
       phone +
-      "Email:" +
+      ", Email: " +
       email
     );
   }
@@ -27,7 +41,7 @@ public abstract class AbstractPerson implements Person, Display {
   @Override
   public boolean isValidId(int id) {
     try {
-      if (id != (this.id)) {
+      if (id != this.id) {
         throw new InvalidPersonDataException("Invalid id number: " + id);
       }
       return true;
