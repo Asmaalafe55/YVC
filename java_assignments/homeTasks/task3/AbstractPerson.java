@@ -8,6 +8,7 @@ public abstract class AbstractPerson implements Person, Display {
   protected String phone;
   protected String email;
 
+  // Constructor to initialize a person with specified attributes.
   public AbstractPerson(
     String name,
     int id,
@@ -22,6 +23,7 @@ public abstract class AbstractPerson implements Person, Display {
     this.email = email;
   }
 
+  // Prints details of the person including name, ID, address, phone, and email.
   @Override
   public void printDetails() {
     System.out.println(
@@ -38,6 +40,7 @@ public abstract class AbstractPerson implements Person, Display {
     );
   }
 
+  // Validates if the provided ID matches the ID of the person.
   @Override
   public boolean isValidId(int id) {
     try {
@@ -46,11 +49,12 @@ public abstract class AbstractPerson implements Person, Display {
       }
       return true;
     } catch (InvalidPersonDataException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage()); // Handle invalid ID exception
       return false;
     }
   }
 
+  // Validates if the provided phone number matches the phone number of the person.
   @Override
   public boolean isValidPhone(String phone) {
     try {
@@ -59,11 +63,12 @@ public abstract class AbstractPerson implements Person, Display {
       }
       return true;
     } catch (InvalidPersonDataException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage()); // Handle invalid phone number exception
       return false;
     }
   }
 
+  // Validates if the provided email matches the email address of the person.
   @Override
   public boolean isValidEmail(String email) {
     try {
@@ -72,11 +77,12 @@ public abstract class AbstractPerson implements Person, Display {
       }
       return true;
     } catch (InvalidPersonDataException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage()); // Handle invalid email exception
       return false;
     }
   }
 
+  // Validates if the provided name matches the name of the person.
   @Override
   public boolean isValidName(String name) {
     try {
@@ -85,11 +91,12 @@ public abstract class AbstractPerson implements Person, Display {
       }
       return true;
     } catch (InvalidPersonDataException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage()); // Handle invalid name exception
       return false;
     }
   }
 
+  // Validates if the provided address matches the address of the person.
   @Override
   public boolean isValidAddress(String address) {
     try {
@@ -98,7 +105,7 @@ public abstract class AbstractPerson implements Person, Display {
       }
       return true;
     } catch (InvalidPersonDataException e) {
-      System.out.println(e.getMessage());
+      System.out.println(e.getMessage()); // Handle invalid address exception
       return false;
     }
   }
