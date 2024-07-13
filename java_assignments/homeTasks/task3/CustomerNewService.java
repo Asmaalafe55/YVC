@@ -16,10 +16,6 @@ public class CustomerNewService {
     return id;
   }
 
-  public boolean isSubscribed() {
-    return subscribed;
-  }
-
   public boolean registerForService(double minAmount) {
     if (minAmount >= 50) {
       this.subscribed = true;
@@ -40,9 +36,18 @@ public class CustomerNewService {
     return money;
   }
 
-  // במתודה זו אנו מחסירים את סכום הכספי מכספו של הלקוח בעקבות איחור בהחזרה של פריט
   public void deductMoney(double amount) {
-    // יש לממש
+    this.money -= amount;
+    if (this.money < 0) {
+      this.money = 0;
+    }
+  }
 
+  public boolean isSubscribed() {
+    return subscribed;
+  }
+
+  public void unsubscribe() {
+    this.subscribed = false;
   }
 }
