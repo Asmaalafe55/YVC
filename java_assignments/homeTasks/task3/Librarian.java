@@ -2,6 +2,7 @@ package homeTasks.task3;
 
 public class Librarian extends AbstractPerson {
 
+  // Represents a Librarian, inheriting from AbstractPerson.
   public Librarian(
     String name,
     int id,
