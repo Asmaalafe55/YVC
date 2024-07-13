@@ -2,6 +2,9 @@ package homeTasks.task3;
 
 public class LibraryManager extends AbstractPerson {
 
+  // Constructor for initializing a Library Manager with specified attributes.
+  // Validates and sets ID ensuring it's exactly 7 digits.
+
   public LibraryManager(
     String name,
     int id,
@@ -11,6 +14,10 @@ public class LibraryManager extends AbstractPerson {
   ) {
     super(name, validateId(id), address, phone, email);
   }
+
+  // Constructor for initializing a default Library Manager with given memberId.
+  // Sets default values for name, address, phone, and email.
+  // Validates and sets ID ensuring it's exactly 7 digits.
 
   public LibraryManager(int memberId) {
     super(
@@ -32,6 +39,7 @@ public class LibraryManager extends AbstractPerson {
     }
   }
 
+  // Getters and setters for LibraryManager attributes (name, id, address, phone, email)
   public String getName() {
     return name;
   }
@@ -72,6 +80,7 @@ public class LibraryManager extends AbstractPerson {
     this.email = email;
   }
 
+  // Override toString method to provide formatted string representation of LibraryManager
   @Override
   public String toString() {
     return (
