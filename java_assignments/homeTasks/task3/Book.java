@@ -47,21 +47,6 @@ public class Book {
     return x; // needs to get rendom number of 3 digits
   }
 
-  @Override
-  public String toString() {
-    return (
-      "Book: [name=" +
-      name +
-      ", author=" +
-      author +
-      ", available=" +
-      available +
-      ", publishedYear=" +
-      publishedYear +
-      "]"
-    );
-  }
-
   public String getName() {
     return name;
   }
@@ -92,5 +77,19 @@ public class Book {
 
   public void setPublishedYear(int publishedYear) {
     this.publishedYear = publishedYear;
+  }
+
+  public void printDetails() {
+    System.out.println(
+      "Book: [name=" +
+      name +
+      ", author=" +
+      author +
+      ", available=" +
+      available +
+      ", publishedYear=" +
+      publishedYear +
+      "]"
+    );
   }
 }

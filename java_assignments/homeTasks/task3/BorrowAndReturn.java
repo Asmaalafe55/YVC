@@ -14,6 +14,7 @@ public class BorrowAndReturn {
 
   public boolean borrowItem(int itemId, int daysToBorrow) {
     // יש לממש
+    return false;
   }
 
   public boolean returnItem(
@@ -22,12 +23,12 @@ public class BorrowAndReturn {
     CustomerNewService customer
   ) {
     // יש לממש
-
+    return false;
   }
 
   //  מתודה זו מחשבת את סכום הקנס של הלקוח במקרה של איחור בהחזרת הפריט
   private double calculateFine(int daysLate) {
     // יש לממש
-
+    return 332;
   }
 }
