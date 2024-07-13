@@ -3,12 +3,16 @@ package homeTasks.task3;
 import java.util.Random;
 import java.util.Scanner;
 
+// Represents a book with attributes such as name, author, availability, and published year.
+
 public class Book {
 
   private String name;
   private String author;
   private boolean available;
-  public int publishedYear;
+  private int publishedYear;
+
+  // Constructor to initialize a Book object with specified details.
 
   public Book(
     String name,
@@ -22,30 +26,36 @@ public class Book {
     this.publishedYear = publishedYear;
   }
 
+  // Default constructor to initialize a Book object with default values.
+  // It prompts the user to enter a year and generates a random 3-digit number for the published year.
+
   public Book() {
     this.name = "Disney";
     this.author = "";
     this.available = false;
-    try ( // initializing a Scanner object
-      Scanner scanner = new Scanner(System.in)
-    ) {
+
+    // Initialize a Scanner object for user input
+    try (Scanner scanner = new Scanner(System.in)) {
       System.out.println("Enter the year of the book: ");
-      int x = scanner.nextInt();
-      // needs to get the first digit from the user
-      this.publishedYear = x * 1000;
+      int userInputYear = scanner.nextInt();
+      // Set the published year as the first digit entered multiplied by 1000
+      this.publishedYear = userInputYear * 1000;
       scanner.close();
     }
+
+    // Add a random 3-digit number to the published year
     this.publishedYear += generateRandomYear();
   }
 
-  private int generateRandomYear() {
-    // initializing a Random object
-    Random random = new Random();
+  // Generates a random 3-digit number for the published year.
 
-    // generating a random integer from 0 to 899, then add 100
-    int x = random.nextInt(900) + 100;
-    return x; // needs to get rendom number of 3 digits
+  private int generateRandomYear() {
+    Random random = new Random();
+    // Generate a random integer from 100 to 999
+    return random.nextInt(900) + 100;
   }
+
+  // Getters and setters for Book attributes
 
   public String getName() {
     return name;
@@ -78,6 +88,8 @@ public class Book {
   public void setPublishedYear(int publishedYear) {
     this.publishedYear = publishedYear;
   }
+
+  // Prints details of the book including name, author, availability, and published year.
 
   public void printDetails() {
     System.out.println(
