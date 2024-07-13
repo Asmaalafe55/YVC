@@ -1,6 +1,6 @@
 package homeTasks.task3;
 
-public class Customer implements Person {
+public class Customer extends AbstractPerson {
 
   private String name;
   private int id;
@@ -96,30 +96,5 @@ public class Customer implements Person {
       email +
       "\n]"
     );
-  }
-
-  @Override
-  public boolean isValidId(int id) {
-    return id == this.id ? true : false;
-  }
-
-  @Override
-  public boolean isValidPhone(String phone) {
-    return phone == this.phone ? true : false;
-  }
-
-  @Override
-  public boolean isValidEmail(String email) {
-    return email == this.email ? true : false;
-  }
-
-  @Override
-  public boolean isValidName(String name) {
-    return name == this.name ? true : false;
-  }
-
-  @Override
-  public boolean isValidAddress(String address) {
-    return address == this.address ? true : false;
   }
 }
