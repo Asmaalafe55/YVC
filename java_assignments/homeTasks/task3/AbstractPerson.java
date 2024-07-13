@@ -26,26 +26,66 @@ public abstract class AbstractPerson implements Person, Display {
 
   @Override
   public boolean isValidId(int id) {
-    return id == this.id ? true : false;
+    try {
+      if (id != (this.id)) {
+        throw new InvalidPersonDataException("Invalid id number: " + id);
+      }
+      return true;
+    } catch (InvalidPersonDataException e) {
+      System.out.println(e.getMessage());
+      return false;
+    }
   }
 
   @Override
   public boolean isValidPhone(String phone) {
-    return phone == this.phone ? true : false;
+    try {
+      if (phone == null || !phone.equals(this.phone)) {
+        throw new InvalidPersonDataException("Invalid phone number: " + phone);
+      }
+      return true;
+    } catch (InvalidPersonDataException e) {
+      System.out.println(e.getMessage());
+      return false;
+    }
   }
 
   @Override
   public boolean isValidEmail(String email) {
-    return email == this.email ? true : false;
+    try {
+      if (email == null || !email.equals(this.email)) {
+        throw new InvalidPersonDataException("Invalid email: " + email);
+      }
+      return true;
+    } catch (InvalidPersonDataException e) {
+      System.out.println(e.getMessage());
+      return false;
+    }
   }
 
   @Override
   public boolean isValidName(String name) {
-    return name == this.name ? true : false;
+    try {
+      if (name == null || !name.equals(this.name)) {
+        throw new InvalidPersonDataException("Invalid name: " + name);
+      }
+      return true;
+    } catch (InvalidPersonDataException e) {
+      System.out.println(e.getMessage());
+      return false;
+    }
   }
 
   @Override
   public boolean isValidAddress(String address) {
-    return address == this.address ? true : false;
+    try {
+      if (address == null || !address.equals(this.address)) {
+        throw new InvalidPersonDataException("Invalid address: " + address);
+      }
+      return true;
+    } catch (InvalidPersonDataException e) {
+      System.out.println(e.getMessage());
+      return false;
+    }
   }
 }
