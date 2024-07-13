@@ -30,13 +30,13 @@ public class BorrowAndReturn {
   ) {
     if (borrowed && this.itemId == itemId) {
       double fine = calculateFine(daysLate);
-      if (customer.getBalance() >= fine) {
-        customer.deductBalance(fine);
+      if (customer.getMoney() >= fine) {
+        customer.deductMoney(fine);
         this.borrowed = false;
         this.daysToBorrow = 0;
         return true;
       } else {
-        customer.unsubscribe();
+        customer.removeSubscription(customer.getId());
         return false;
       }
     } else {
