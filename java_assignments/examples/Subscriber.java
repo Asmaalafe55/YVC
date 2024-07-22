@@ -39,7 +39,7 @@ public class Subscriber {
   //     // try {} catch (Exception e) {}
 
   //     if (msg == "") {
-  //       throw NoMessageException;
+  //       throw new NoMessageException;
   //     } else {
   //       System.out.println(msg);
   //     }
